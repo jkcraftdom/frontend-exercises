@@ -1,0 +1,40 @@
+.populares__card__titulo{
+    color: #808080;
+    font-size: 1.5rem;
+}
+
+.populares__card__data{
+    color: #808080;
+    font-size: .9rem;
+}
+
+.populares__card__description{
+    color: #333333;
+    line-height: 1.5;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.populares__titulo{
+    font-weight: 500;
+}
+
+.populares__icon{
+    margin-right: .25rem;
+}
+
+.populares__card__header{
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.populares__boton{
+    background: transparent;
+    border: none;
+    color: #333333;
+}
+
+.populares__card:last-child{
+    margin-right: 0;
+}
