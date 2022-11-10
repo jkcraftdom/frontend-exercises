@@ -43,13 +43,17 @@
 }
 
 
-.populars__contenido{
+.populares__contenido{
     display: flex;
     flex-wrap: wrap;
     grid-area: contenido;
     padding: 1rem 0rem;
 }
 
+.populares__header{
+    display: flex;
+    
+}
 .populares__card__titulo{
     color: #808080;
     font-size: 1.5rem;
