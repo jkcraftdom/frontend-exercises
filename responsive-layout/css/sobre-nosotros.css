@@ -3,7 +3,7 @@
     padding-bottom: 3rem;
 }
 
-.sobre_nosotros__titulo {
+.sobre-nosotros__titulo {
     color: var(--fuente-ceniza-oscuro);
     font-weight: 700;
     font-size: 1.5rem;
@@ -13,12 +13,12 @@
     margin-bottom: 1.25rem;
 }
 
-.sobre_nosotros__texto {
+.sobre-nosotros__texto {
     line-height: normal;
     margin-bottom: 1rem;
 }
 
-.sobre_nosotros__plataformas {
+.sobre-nosotros__plataformas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -30,13 +30,27 @@
     font-weight: 700;
 }
 
-.boton{
-    text-align: center;
-    display: block;
-    width: 100%;
-    max-width: 350px;
-    box-sizing: border-box;
-    padding: 1rem 2rem;
-    border: 1px solid #fff;
-    border-radius: 5px;
+.sobre-nosotros__imagen {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre-nosotros {
+        display: flex;
+    }
+    
+    .sobre-nosotros__contenido {
+        margin-right: 3rem;
+    }
+    .sobre-nosotros__titulo {
+        text-align: left;
+    }
+    .sobre-nosotros__texto--division {
+        border-bottom: 1px solid var(--cinza-medio);
+
+        padding-bottom: 1.5rem;
+    }
+    .sobre-nosotros__imagen {
+        display: block;
+    }
 }
