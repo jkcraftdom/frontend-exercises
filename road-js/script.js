@@ -1,26 +1,22 @@
-import btnIcon from "./components/delete-icon.js";
-import taskContent from "./components/task-content.js";
+import {handleClick} from './logic/index.js';
+import createTaskElement from './components/task-element.js';
 
 (() => {
   const btn = document.querySelector("[data-form-btn]");
 
-  const createTask = (e) => {
-    e.preventDefault();
+  var taskList = []
 
-    const input = document.querySelector("[data-form-input]");
+  const loadData = () => { 
+    taskList = JSON.parse(localStorage.getItem("tasks")) || [];
+    const list = document.querySelector(".cardsList");
 
-    const tasks = document.querySelector("[data-tasks");
+    for(const task of taskList){
+      list.appendChild(createTaskElement(task))
+    }
 
-    const task = document.createElement("li");
+  }
 
-    task.classList.add("card");
+  loadData();
 
-    task.appendChild(taskContent(input.value));
-    
-    task.appendChild(btnIcon());
-
-    tasks.appendChild(task);
-  };
-
-  btn.addEventListener("click", createTask);
+  btn.addEventListener("click", handleClick);
 })();
