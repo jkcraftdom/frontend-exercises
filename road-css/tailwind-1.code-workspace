@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../tailwind-1"
+		},
+		{
+			"path": "../../react/hobbie_app"
+		},
+		{
+			"path": "../../react/app-fullstackopen"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "road-css"
+	}
+}
